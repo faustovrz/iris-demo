@@ -1,16 +1,17 @@
-# iris-demo
+# iris-test
 
 A small teaching demo: one-way ANOVA on the `iris` dataset, Tukey HSD post-hoc
-test, and a compact letter display (CLD) on a boxplot. Provided in **two
+test, and a compact letter display (CLD) on a boxplot. Provided in **three
 formats** so you can compare:
 
-| File                  | Format       | Render with                |
+| File                  | Format       | Use                        |
 |-----------------------|--------------|----------------------------|
+| `iris_anova.R`     | R script     | Run line by line in Positron (`Cmd+Enter` / `Ctrl+Enter`) |
 | `iris_anova.Rmd`   | R Markdown   | Knit button in Positron, or `rmarkdown::render("iris_anova.Rmd")` |
 | `iris_anova.qmd`   | Quarto       | Render button in Positron, or `quarto render iris_anova.qmd`      |
 
-Both produce the same analysis and the same plot — only the YAML and chunk
-options differ.
+The `.R` file is for interactive exploration. The `.Rmd` and `.qmd` produce
+the same rendered document — only the YAML and chunk options differ.
 
 ## Required R packages
 
@@ -31,9 +32,10 @@ install.packages(c("multcompView", "ggplot2", "rmarkdown"))
 ## Repo layout
 
 ```
-iris-demo/
+iris-test/
 ├── README.md
 ├── .gitignore
+├── iris_anova.R     # Plain R script
 ├── iris_anova.Rmd   # R Markdown version
 └── iris_anova.qmd   # Quarto version
 ```
