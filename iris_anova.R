@@ -58,7 +58,7 @@ summary(fit)
 tuk <- TukeyHSD(fit)
 tuk
 
-plot(tuk)   # 95% confidence intervals for each pairwise difference
+plot(tuk, xlim = c(0,2))   # 95% confidence intervals for each pairwise difference
 
 
 # ---- 6. Compact letter display --------------------------------------------
