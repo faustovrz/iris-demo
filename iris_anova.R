@@ -15,13 +15,17 @@ if (length(to_install)) install.packages(to_install)
 
 data(iris)
 
-# Click the iris row in the Variables pane (top-right) to open the
-# data viewer. You can sort columns, filter rows, no code required.
-View(iris)
+
+# Data text based preview
 
 head(iris)
 summary(iris)
 table(iris$Species)
+
+# Click the iris row in the Variables pane (top-right) to open the
+# data viewer. You can sort columns, filter rows, no code required.
+
+View(iris)
 
 
 # ---- 2. Get help on any function ------------------------------------------
